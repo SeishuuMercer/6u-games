@@ -1,0 +1,28 @@
+:root {
+    /* color-scheme: light dark; */
+    --bg-color: light-dark(#ccc, #222);
+    --bg-color-2: light-dark(#ddd, #333);
+    --fg-color: light-dark(#222, #ccc);
+    --fg-color-2: light-dark(#333, #ddd);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arial", sans-serif;
+}
+
+a {
+    color: var(--fg-color);
+    text-decoration: none;
+}
+
+body {
+    color: var(--fg-color);
+}
+
+.container {
+    margin-top: 50px;
+}
