@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Berlin Sans';
+    font-weight: 'demi';
+    src: url('/assets/text-fonts/Berlin-Sans-Demi.otf');
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Cartas */
+.title-card {
+    position: relative;
+    width: 20vw;
+    margin: 2%;
+}
+
+.title-card div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-card h3 {
+    position: absolute;
+    -webkit-text-stroke: 0.1vw black;
+    align-items: center;
+    font-family: 'Berlin Sans';
+    font-weight: 'demi';
+    font-size: 4.2vw;
+    padding: 10px;
+}
+
+.title-card h3 span {
+    font-family: 'Berlin Sans';
+    font-weight: 'demi';
+    font-size: 2vw;
+    line-height: 5vw;
+}
+
+.einstein-card h3 {
+    color: rgb(225, 0, 0);
+}
+
+.jumping-frogs-card h3 {
+    color: rgb(0, 225, 0);
+}

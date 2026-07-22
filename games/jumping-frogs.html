@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6U Games</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/jumping-frogs.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="background">
+            <div class="water">
+                <img class="lake" src="../assets/images/jumping-frogs/lake-water.svg" alt="Lago, agua">
+                <img class="lake lake-light" src="../assets/images/jumping-frogs/lake-light.svg" alt="Lago, reflejo">
+            </div>
+            <img class="lake" src="../assets/images/jumping-frogs/lake-border.svg" alt="Lago, borde">
+        </div>
+
+        <div class="buttons-container">
+            <button id="reset-button" class="button" onclick="resetFrogs()">Reiniciar</button>
+
+            <button id="rules-button" class="button">Reglas</button>
+            <div id="overlay" class="overlay">
+                <div class="rules-window">
+                    <span class="close">&times;</span>
+                    <h2>Reglas</h2>
+                    <ul>
+                        <li>Las ranas verdes solo pueden moverse hacia la derecha, y las ranas marrones solo pueden moverse hacia la izquierda.</li>
+                        <li>Las ranas solo pueden saltar si el espacio libre está a 1 o 2 espacios delante de la rana.</li>
+                    </ul>
+                    <h2>Objetivo</h2>
+                    <p>El objetivo es conseguir que todas las ranas de la izquierda se muevan a la derecha, y viceversa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div class="nenuphars-container">
+                <div class="nenuphar">
+                    <img src="../assets/images/jumping-frogs/nenuphar.svg" alt="Nenúfar">
+                </div>
+                <div class="nenuphar">
+                    <img src="../assets/images/jumping-frogs/nenuphar.svg" alt="Nenúfar">
+                </div>
+                <div class="nenuphar">
+                    <img src="../assets/images/jumping-frogs/nenuphar.svg" alt="Nenúfar">
+                </div>
+                <div class="nenuphar">
+                    <img src="../assets/images/jumping-frogs/nenuphar.svg" alt="Nenúfar">
+                </div>
+                <div class="nenuphar">
+                    <img src="../assets/images/jumping-frogs/nenuphar.svg" alt="Nenúfar">
+                </div>
+                <div class="nenuphar">
+                    <img src="../assets/images/jumping-frogs/nenuphar.svg" alt="Nenúfar">
+                </div>
+                <div class="nenuphar">
+                    <img src="../assets/images/jumping-frogs/nenuphar.svg" alt="Nenúfar">
+                </div>
+            </div>
+    
+            <div class="frogs-container">
+                <div class="left frog" style="left: -1%">
+                    <img class="standing" src="../assets/images/jumping-frogs/frog-left-standing.svg" alt="Rana Izquierda Sentada">
+                    <img class="jumping invisible" src="../assets/images/jumping-frogs/frog-left-jumping.svg" alt="Rana Izquierda Saltando">
+                </div>
+                <div class="left frog" style="left: -1%">
+                    <img class="standing" src="../assets/images/jumping-frogs/frog-left-standing.svg" alt="Rana Izquierda Sentada">
+                    <img class="jumping invisible" src="../assets/images/jumping-frogs/frog-left-jumping.svg" alt="Rana Izquierda Saltando">
+                </div>
+                <div class="left frog" style="left: -1%">
+                    <img class="standing" src="../assets/images/jumping-frogs/frog-left-standing.svg" alt="Rana Izquierda Sentada">
+                    <img class="jumping invisible" src="../assets/images/jumping-frogs/frog-left-jumping.svg" alt="Rana Izquierda Saltando">
+                </div>
+                <div class="space" style="left: 0px">
+                </div>
+                <div class="right frog" style="left: 1%">
+                    <img class="standing" src="../assets/images/jumping-frogs/frog-right-standing.svg" alt="Rana Derecha Sentada">
+                    <img class="jumping invisible" src="../assets/images/jumping-frogs/frog-right-jumping.svg" alt="Rana Derecha Saltando">
+                </div>
+                <div class="right frog" style="left: 1%">
+                    <img class="standing" src="../assets/images/jumping-frogs/frog-right-standing.svg" alt="Rana Derecha Sentada">
+                    <img class="jumping invisible" src="../assets/images/jumping-frogs/frog-right-jumping.svg" alt="Rana Derecha Saltando">
+                </div>
+                <div class="right frog" style="left: 1%">
+                    <img class="standing" src="../assets/images/jumping-frogs/frog-right-standing.svg" alt="Rana Derecha Sentada">
+                    <img class="jumping invisible" src="../assets/images/jumping-frogs/frog-right-jumping.svg" alt="Rana Derecha Saltando">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/jumping-frogs.js"></script>
+</body>
+</html>

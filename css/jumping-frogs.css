@@ -1,0 +1,178 @@
+html, body {
+    height: 90%;
+}
+
+.container {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Background */
+@keyframes lakeLight {
+    from {left: 0;}
+    to {left: -100%;}
+}
+
+.lake {
+    position: fixed;
+    width: 100%;
+}
+
+.lake-light {
+    width: 200%;
+    opacity: 50%;
+    animation: lakeLight 60s linear infinite;
+}
+
+
+
+/* Botones */
+.buttons-container {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+}
+
+.overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+}
+
+#rules-button {
+    margin-top: 30%;
+    margin-left: 32%;
+}
+
+#reset-button {
+    margin-top: 10%;
+    margin-left: 58%;
+}
+
+.button {
+    position: fixed;
+    background-color: pink;
+    border: 5px solid palevioletred;
+    border-radius: 20%;
+    padding: 2%;
+    font-size: 200%;
+}
+
+.button:hover {
+    background-color: palevioletred;
+}
+
+.rules-window {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-width: 300px;
+    width: 50%;
+    padding: 20px;
+    padding-bottom: 30px;
+    top: 0;
+    margin-top: 6%;
+}
+
+.rules-window h2 {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.rules-window ul {
+    padding-left: 20px;
+}
+
+.close {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 0 9px;
+    top: 10px;
+    right: 10px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.show {
+    display: flex;
+}
+
+/* Nenúfares y ranas */
+.game-container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nenuphars-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 50%;
+}
+
+.nenuphar {
+    width: 10%;
+    margin: 5px;
+}
+
+.frogs-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 50%;
+}
+
+.frog, .space {
+    position: relative;
+    width: 9%;
+    margin: 10px;
+    z-index: 0;
+}
+
+.frog.jumpingOne {
+    transition: transform 0.2s;
+}
+
+.frog.jumpingTwo {
+    transition: transform 0.4s;
+}
+
+@keyframes dance {
+    from {
+        filter: hue-rotate(0deg);
+        rotate: 0deg;
+    }
+    to {
+        filter: hue-rotate(360deg);
+        rotate: 720deg;
+    }
+}
+
+.dance {
+    animation: dance 2s linear infinite;
+}
+
+.space {
+    visibility: hidden;
+}
+
+.invisible {
+    display: none;
+}
